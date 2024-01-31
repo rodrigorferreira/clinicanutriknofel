@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -56,19 +57,29 @@ section#home p {
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
 }
 
+/* Estilo para os cards */
 .card {
     display: inline-block;
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    max-width: 300px;
+    width: 300px;
+    height: 300px;
     text-align: left;
+    overflow: hidden;
+    box-sizing: border-box; /* Inclui a borda e o preenchimento no tamanho total do elemento */
 }
 
 .card img {
-    max-width: 100%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
     border-radius: 8px;
+}
+
+.card-content {
+    margin-top: 10px; /* Adicione uma margem superior para separar a imagem do conteúdo */
 }
 
 .card a {
@@ -79,6 +90,7 @@ section#home p {
     font-weight: bold;
 }
 
+/* Estilo para a seção "Sobre" */
 #about {
     background-color: #f9f9f9; /* Cor de fundo da seção "Sobre" */
     padding: 40px;
@@ -94,8 +106,37 @@ section#home p {
 #about p {
     color: #666; /* Cor do texto */
     line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    text-align: justify;
 }
 
+/* Estilo para seção "Sobre" com foto */
+.about-content {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 400px; /* Adapte conforme necessário para o espaçamento entre a imagem e o texto */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Adapte conforme necessário para bordas arredondadas */
+    border: 3px solid #ddd; /* Adiciona uma borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 20px; /* Adapte conforme necessário para o espaçamento entre a imagem e o texto */
+}
+
+
+
+/* Estilos da Seção "Serviços" */
 .service {
     margin-bottom: 20px; /* Adiciona espaço entre os serviços */
     padding: 20px;
@@ -159,6 +200,7 @@ section#home p {
     color: #666; /* Cor do texto */
 }
 
+/* Estilos para o formulário "Contato" */
 form {
     max-width: 400px;
     margin: 0 auto;
@@ -187,23 +229,30 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block; /* Garante que o botão seja exibido como bloco */
+    margin-top: 10px; /* Adiciona margem superior para separação */
+
 }
 
-button {
+/* Botao Voltar para home */
+.button-back-to-home {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
+.button-back-to-home:hover {
     background-color: #0056b3;
 }
-
 
 /* Regras para telas com largura de até 600px */
 @media (max-width: 600px) {

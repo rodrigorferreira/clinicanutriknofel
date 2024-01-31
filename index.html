@@ -79,13 +79,27 @@
 
     <!-- Seção "Sobre" -->
     <section id="about">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            
-            <p>Somos uma equipe dedicada de profissionais de nutrição comprometidos em ajudá-lo a alcançar seus objetivos de saúde e bem-estar. Nossa abordagem personalizada visa fornecer orientação nutricional eficaz e apoiar cada cliente em sua jornada única.</p>
 
-            <button onclick="showSection('home');">Voltar para Home</button>
+        <div class="container">
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <h2>Sobre Nós</h2>
+            
+                        <p>Somos uma equipe dedicada de profissionais de nutrição comprometidos em ajudá-lo a alcançar seus objetivos de saúde e bem-estar. Nossa abordagem personalizada visa fornecer orientação nutricional eficaz e apoiar cada cliente em sua jornada única.</p>
+
+                            <button class="button-back-to-home" onclick="showSection('home');">Voltar para Home</button>
+                </div>            
+            
+            </div>    
         
+        </div>
+
+        <div class="about-image">
+            
+            <img src="./imagens/nutri.jpeg" alt="Nutricionista">
         </div>
     
     </section>
@@ -114,7 +128,8 @@
                 <p>Assistimos indivíduos em programas de perda de peso, fornecendo suporte nutricional e ajustando estratégias conforme necessário para alcançar metas de forma saudável.</p>
             </div>
 
-            <button onclick="showSection('home');">Voltar para Home</button>
+            <button class="button-back-to-home" onclick="showSection('home');">Voltar para Home</button>
+
     
             <!-- Adicione mais serviços conforme necessário -->
     
@@ -128,7 +143,8 @@
             
             <p>Explore nossos artigos informativos sobre saúde, nutrição e bem-estar.</p>
 
-            <button onclick="showSection('home');">Voltar para Home</button>
+            <button class="button-back-to-home" onclick="showSection('home');">Voltar para Home</button>
+
             <!-- Adicione links e informações sobre os artigos do blog conforme necessário -->
         </div>
     </section>
@@ -153,14 +169,16 @@
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Enviar Mensagem</button>
+                <button id="sendMessageButton" type="submit">Enviar Mensagem</button>
+
 
                 <!-- Mensagens de feedback após o envio -->
                 <p id="success-message" class="success-message"></p>
                 <p id="error-message" class="error-message"></p>
             </form>
 
-            <button onclick="showSection('home');">Voltar para Home</button>
+        <button class="button-back-to-home" onclick="showSection('home');">Voltar para Home</button>
+
             
         </div>
 
