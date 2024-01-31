@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/footer.css"> -->
+    
+    <title>Nutri Knofel</title>
+    
+</head>
+
+<body>
+
+<header>    
+
+<nav>
+    <a class ="logo" href="#home">Clinica Knofel</a>
+    
+    <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    
+    <ul class="nav-list">
+        <!-- <li><a href="#sobre">Sobre</a></li> -->
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">Sobre</a></li>
+        <li><a href="#" onclick="showSection('services')">Serviços</a></li>
+        <li><a href="#" onclick="showSection('blog');">Blog</a></li>
+        <li><a href="#" onclick="showSection('contact');">Contato</a></li>
+    </ul>
+</nav>   
+
+</header>
+
+<main>
+
+    <!-- Seção "Home" -->
+    <section id="home">
+        <div class="container">
+            <h1>Bem-vindo à Clínica Knofel</h1>
+            <p>Sua jornada para uma vida mais saudável começa aqui. Oferecemos consultoria nutricional personalizada para ajudá-lo a alcançar seus objetivos de saúde e bem-estar.</p>
+
+            <!-- Cards com links para "About" e "Services" -->
+            <div class="card">
+                <img src="./imagens/logo.jpg" alt="Sobre Nós">
+                <h3>Sobre Nós</h3>
+                <p>Conheça nossa equipe e nossa missão.</p>
+                <a href="#" onclick="showSection('about');">Saiba mais</a>
+            </div>
+
+            <div class="card">
+                <img src="./imagens/bg2.jpg" alt="Nossos Serviços">
+                <h3>Nossos Serviços</h3>
+                <p>Descubra os serviços que oferecemos para melhorar sua saúde.</p>
+                <a href="#" onclick="showSection('services');">Saiba mais</a>
+            </div>
+
+            <div class="card">
+                <img src="./imagens/blog.jpg" alt="Nosso Blog">
+                <h3>Nosso Blog</h3>
+                <p>Leia nossos artigos sobre saúde, nutrição e bem-estar.</p>
+                <a href="#" onclick="showSection('blog');">Leia mais</a>
+            </div>
+
+            <div class="card">
+                <img src="./imagens/contato.jpg" alt="Contato">
+                <h3>Contato</h3>
+                <p>Entre em contato conosco para agendar uma consulta.</p>
+                <a href="#" onclick="showSection('contact');">Entre em contato</a>
+            </div>
+        
+        
+        </div>
+    </section>
+
+    <!-- Seção "Sobre" -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            
+            <p>Somos uma equipe dedicada de profissionais de nutrição comprometidos em ajudá-lo a alcançar seus objetivos de saúde e bem-estar. Nossa abordagem personalizada visa fornecer orientação nutricional eficaz e apoiar cada cliente em sua jornada única.</p>
+
+            <button onclick="showSection('home');">Voltar para Home</button>
+        
+        </div>
+    
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+    
+            <div class="service">
+                <h3>Consultas Nutricionais Personalizadas</h3>
+                <p>Oferecemos consultas individuais para avaliação do estado nutricional, elaboração de planos alimentares personalizados e acompanhamento contínuo.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Planos Alimentares Específicos</h3>
+                <p>Desenvolvemos planos alimentares adaptados às necessidades individuais de cada cliente, levando em consideração metas, preferências e restrições alimentares.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Orientação Nutricional para Grupos</h3>
+                <p>Realizamos palestras e workshops sobre nutrição para empresas, escolas e grupos com o objetivo de promover hábitos alimentares saudáveis.</p>
+            </div>
+    
+            <div class="service">
+                <h3>Acompanhamento em Programas de Emagrecimento</h3>
+                <p>Assistimos indivíduos em programas de perda de peso, fornecendo suporte nutricional e ajustando estratégias conforme necessário para alcançar metas de forma saudável.</p>
+            </div>
+
+            <button onclick="showSection('home');">Voltar para Home</button>
+    
+            <!-- Adicione mais serviços conforme necessário -->
+    
+        </div>
+    </section>
+
+    <!-- Seção "Blog" -->
+    <section id="blog">
+        <div class="container">
+            <h2>Nosso Blog</h2>
+            
+            <p>Explore nossos artigos informativos sobre saúde, nutrição e bem-estar.</p>
+
+            <button onclick="showSection('home');">Voltar para Home</button>
+            <!-- Adicione links e informações sobre os artigos do blog conforme necessário -->
+        </div>
+    </section>
+
+    <!-- Seção "Contato" -->
+    <section id="contact">
+        <div class="container">
+            
+            <h2>Contato</h2>
+
+            <p>Entre em contato conosco para agendar uma consulta ou fazer perguntas.</p>
+
+            <!-- Exemplo de formulário de contato -->
+            <!-- Formulário de Contato -->
+            <form id="contact-form" onsubmit="submitForm(); return false;">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+
+                <!-- Mensagens de feedback após o envio -->
+                <p id="success-message" class="success-message"></p>
+                <p id="error-message" class="error-message"></p>
+            </form>
+
+            <button onclick="showSection('home');">Voltar para Home</button>
+            
+        </div>
+
+</main>
+
+<div>
+    
+</div>
+
+<script src="mobile-navbar.js"></script>
+<script src="section.js"></script>
+
+<!-- <footer> 
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Clinica Knofel</h1>
+            <p>It's all about your dreams.</p>
+
+            <div id="footer_social_media">
+                <a href="https://www.instagram.com/clinicaknofel/" target="_blank" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/thassianaknofel" target="_blank" class="footer-link" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://wa.me/32991409452" target="_blank" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Blog</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Qualidade de Vida</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Saúde na 3º Idade</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Saúde no Esporte</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Links</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Serviços</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Contato</a>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Inscreva-se</h3>
+
+            <p>
+                Fornecendo seu e-mail para receber atualizações 
+                personalizadas e orientações nutricionais diretamente 
+                na sua caixa de entrada.
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved
+    </div>   
+    
+
+        
+</footer> -->
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+    
+}
+
+main {
+    /* background: url('/imagens/siteemconstrucao.jpg') no-repeat center center; */
+    background-size: 100% auto;
+    height: 150vh;
+    min-height: 450px;
+}
+
+section#home {
+    background-color: #f0f0f0; /* Cor de fundo da seção "Home" */
+    padding: 40px;
+    text-align: center;
+}
+
+section#home h1 {
+    color: #333; /* Cor do título */
+    margin-top: 20px; /* Espaço na parte superior do título */
+    margin-bottom: 30px; /* Espaço na parte inferior do título */
+}
+
+section#home p {
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#about {
+    background-color: #f9f9f9; /* Cor de fundo da seção "Sobre" */
+    padding: 40px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #333; /* Cor do título */
+    margin-top: 20px; /* Espaço na parte superior do título */
+    margin-bottom: 30px; /* Espaço na parte inferior do título */
+}
+
+#about p {
+    color: #666; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.service {
+    margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    padding: 20px;
+    border: 1px solid #ddd; /* Adiciona uma borda para separar visualmente os serviços */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Cor de fundo */
+}
+
+#services h2 {
+    text-align: center;
+    margin-top: 5%; /* Adiciona espaço na parte superior */
+    margin-bottom: 30px; /* Adicione uma margem inferior para espaçamento */
+}
+
+
+.service h3 {
+    color: #333; /* Cor do título */
+}
+
+.service p {
+    color: #666; /* Cor do texto */
+}
+
+/* Estilos da Seção "Blog" */
+#blog {
+    margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    padding: 20px;
+    border: 1px solid #ddd; /* Adiciona uma borda para separar visualmente os serviços */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Cor de fundo */
+}
+
+#blog h2 {
+    text-align: center;
+    margin-top: 5%; /* Adiciona espaço na parte superior */
+    margin-bottom: 30px; /* Adicione uma margem inferior para espaçamento */
+}
+
+#blog p {
+    margin-bottom: 20px;
+    color: #666; /* Cor do texto */
+}
+
+/* Estilos da Seção "Contato" */
+#contact {
+    margin-bottom: 20px; /* Adiciona espaço entre os serviços */
+    padding: 20px;
+    border: 1px solid #ddd; /* Adiciona uma borda para separar visualmente os serviços */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Cor de fundo */
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top: 5%; /* Adiciona espaço na parte superior */
+    margin-bottom: 30px; /* Adicione uma margem inferior para espaçamento */
+}
+
+#contact p {
+    margin-bottom: 20px;
+    color: #666; /* Cor do texto */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Regras para telas com largura de até 600px */
+@media (max-width: 600px) {
+    main {
+        background-size: 100% auto;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    cursor: pointer; /* Para o cursor ficar em forma de maozinha*/
+    display: none; /*Esconder o menu mobile*/
+    
+}
+
+.mobile-menu div {
+    width: 32px;/* Largura do menu*/
+    height: 2px;/* Altura do menu*/
+    background: #fff; /* Cor do menu*/
+    margin: 8px; /* Margem do menu*/
+}
+
+@media (max-width: 999px) { /* Para telas menores que 999px*/
+    body {
+        overflow-x: hidden;/* se algo transborda fica escondido do body*/
+    }
+    .nav-list { /* tera um position absoluto*/
+        position: absolute; /* posiciona a navegação onde agente bem quiser*/
+        top: 8vh; /* para ficar logo abaixo do header */
+        right: 0; /* para ficar a direita */
+        width: 50vw; /*largura*/
+        height: 92vh; /* altura*/
+        background: #23232e; /* cor*/
+        flex-direction: column; /* para ficar em coluna*/
+        align-items: center; /* para ficar alinhado ao centro*/
+        justify-content: space-around; /* para ficar espacado*/
+        transform: translateX(100%); /* para ficar transparente*/
+        transition: transform 0.3s ease-in; /* para ficar mais suave*/
+
+
+    }
+}
+
+.nav-list li {
+    margin-left: 100; /* espaçamento entre os itens do menu*/
+    opacity: 0; /* para ficar transparente*/
+}
+
+.mobile-menu {
+    display: block; /* para se auto ajustar o menu*/
+
+}
+
+.nav-list.active {
+    transform: translateX(0); /* para ficar visível*/
+}
+/* */
+@keyframes navLinkFade {
+    from {
+      opacity: 0; /* para ficar transparente*/
+      transform: translateX(50px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+/*PARAGRAFO DA HOME*/
+
+.destaque p {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre as linhas */
+    color: #141313; /* Cor do texto */
+    background-color: #cfd8cf; /* Cor de fundo do parágrafo */
+    padding: 30px; /* Espaçamento interno do parágrafo */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* Tornar a fonte responsiva */
+@media screen and (max-width: 600px) {
+    .destaque p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+/*RODAPE FOOTER*/
+
+
+footer {
+    background-color: #23232e;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff; /* Altere para a cor desejada */
+}
+
+.social-icons i {
+    font-size: 40px; /* Altere para o tamanho desejado */
+}
+
+footer .direitos .text-center {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}
